@@ -6,6 +6,9 @@ const book_appointmentController=require('../controller/book_appointment_control
 
 userRouter.get('/',book_appointmentController.getappointmentid)
 userRouter.post('/',book_appointmentController.addappointment)
+userRouter.post('/contact',book_appointmentController.addcontact)
+
+
 userRouter.get('/all',book_appointmentController.getallappointment)
 
 userRouter.get('/singledata/:id',book_appointmentController.getsinglesappointment)
